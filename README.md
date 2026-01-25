@@ -47,7 +47,7 @@ A complete redesign were made to make the use or PSFree more beautiful and user 
 # How to run
 ___
 ## Online
-* [Click Here](https://arabpixel.github.io/PSFree-Enhanced/) to try PSFree Enhanced online
+* [Click Here](https://BOGDAN102885.github.io/freps4/) to try PSFree Enhanced online
 
 ## Locally
 You'll either need a local server, even Live Server extension on VSCode works, or install python, which is the recommended way to generate manifest at the end using the provided python script by [Nazky](https://github.com/nazky)
