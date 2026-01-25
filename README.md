@@ -1,59 +1,67 @@
-# PSFree version 1.5.1
 
-PSFree is a collection of exploits for the PS4 console. The main focus of the repo is for the PS4, but we try to make things portable to PS5.
+# PSFree Enhanced visually.
 
-## Features
+PSFree Enhanced is still in beta and it's unstable and work in progress. Jailbreak multi firmware website for the PlayStation 4.
 
-- **Auto-detection:** Automatically detects console type and firmware version (via `src/config.mjs`).
-- **WebKit Exploit (PSFree):** Entry point via the console's web browser.
-- **Kernel Exploit (Lapse):** Escalates privileges to kernel level.
-- **Payload Loader:** After successful kernel exploitation listens for a payload on port 9020.
+This repo is based on the work of three other repos :
 
-## Vulnerability Scope
+- [PSFree from Kame repo](https://github.com/kmeps4/PSFree)
 
-|               | PSFree    | Lapse      |
-| :------------ | :-------- | :--------- |
-| PlayStation 4 | 6.00-9.60 | 1.01-12.02 |
-| PlayStation 5 | 1.00-5.50 | 1.00-10.01 |
+- [PSFree from Al-Azif repo](https://github.com/Al-Azif/psfree-lapse)
 
-## Supported by this Repository
+- [PSFree website from Nazky repo](https://github.com/Nazky/PSFree)
 
-This table indicates firmware versions for which the _current version_ of this repository provides a functional and tested exploit chain.
+___
 
-|               | PSFree    | Lapse     |
-| :------------ | :-------- | :-------- |
-| PlayStation 4 | 7.00-9.60 | 7.00-9.60 |
-| PlayStation 5 | N/A       | N/A       |
 
-_Note: Support for other firmwares listed in the "Vulnerability Scope" table may, or may not, be actively being worked on or may have been supported in previous versions of this repository. Please check `CHANGELOG.md` for historical support._
+### Know issues
 
-## TODO List
+- Black screen on certain games.
 
-- [X] ~~Blackscreen/Save issue with certain games~~ Issue is patched post-exploit
-  - [ ] Determine root cause and fix more directly
-- [ ] `lapse.mjs`: Just set the bits for JIT privs
-- [ ] `view.mjs`: Assumes PS4, support PS5 as well
-- [ ] Add PS5 support
+- Save corruption on certain games.
 
-## Additional features
+- PS4 crash.
 
-- Language switcher
-- HEN flavor selector
-- GoldHEN version selector
-- Descriptive payload selection
-- Unsuported payload loading protection
-- Load payloads with GoldHEN's BinLoader through a mirrored [http host](http://psfree-enhanced.free.nf/)
-- Up to date
+- Some payloads may not work correctly.
 
-## Contribution
-You can :
-- look at the [languages folder](https://github.com/ArabPixel/PSFree-Enhanced/tree/main/includes/js/languages) and PR your language!
--  improve the host by modefying, updating or adding new features!
-## Copyright and Authors:
 
-AGPL-3.0-or-later (see [LICENSE](LICENSE)). This repo belongs to the group `anonymous`. We refer to anonymous contributors as "anonymous" as well.
+### Currently working firmware
 
-## Credits:
+| Console | Firmware |
 
-- anonymous for PS4 firmware kernel dumps
-- Check the appropriate files for any **extra** contributors. Unless otherwise stated, everything here can also be credited to us.
+|:------ |:----------|
+
+| PS4 | 7.00 - 9.60 |
+
+  ## Additional features
+A complete redesign were made to make the use or PSFree more beautiful and user friendly.
+
+  1. Multiple Language support
+  2. ~~Custom colors~~ -- WIP
+  3. ~~Background switcher~~ -- WIP
+ 
+ More ideas could be added later.. 
+ 
+ *Note: those are only **nice to have** features and aesthetics. And these changes may or may not affect the efficiency of the jailbreak process.*
+
+# How to run
+___
+## Online
+* [Click Here](https://arabpixel.github.io/PSFree-Enhanced/) to try PSFree Enhanced online
+
+## Locally
+You'll either need a local server, even Live Server extension on VSCode works, or install python, which is the recommended way to generate manifest at the end using the provided python script by [Nazky](https://github.com/nazky)
+  
+### for Python
+
+#### Linux:
+___
+Just start the 'start_server.sh'.
+```bash
+sudo chmod start_server.sh
+./start_server.sh
+```
+#### Windows:
+Just start (double-click) the start_server.bat.*
+___
+## Contributions are welcome :)
